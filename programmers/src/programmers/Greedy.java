@@ -13,11 +13,12 @@ public class Greedy {
 	}
 	public static int getCount(int N) {
 		int cnt = 0;
-		int a = N % 500;
-		int b = a % 100;
-		int c = b % 50;
-		
-		cnt += N / 500 + a / 100 + b / 50 + c / 10;
+			
+		int[] arrCoin = {500, 100, 50, 10};
+		for(int i = 0; i < arrCoin.length; i++) {
+			cnt += N / arrCoin[i];
+			N %= arrCoin[i];
+		}
 		
 		return cnt;
 	}
