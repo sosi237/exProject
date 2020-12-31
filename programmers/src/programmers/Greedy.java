@@ -18,13 +18,6 @@ public class Greedy {
 			cnt += N / coin;
 			N %= coin;
 		}
-		/*	
-		for(int i = 0; i < arrCoin.length; i++) {
-			cnt += N / arrCoin[i];
-			N %= arrCoin[i];
-		}
-		*/
-		
 		return cnt;
 	}
 }
