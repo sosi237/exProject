@@ -13,8 +13,8 @@ public class LRUD {
 	}
 	public static int[] getPosition(String[] move, int n) {
 		int[] curPosition = {1, 1};
-		for(String i : move) {
-			if(curPosition[1] != 1 && i.equals("L"))	curPosition[1]--;
+		for(String i : move) {	//정사각형의 범위를 벗어나지 않을 때만 이동시킴
+			if(curPosition[1] != 1 && i.equals("L"))	curPosition[1]--;	
 			if(curPosition[1] != n && i.equals("R"))	curPosition[1]++;
 			if(curPosition[0] != 1 && i.equals("U"))	curPosition[0]--;
 			if(curPosition[0] != n && i.equals("D"))	curPosition[0]++;
