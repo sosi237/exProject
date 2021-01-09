@@ -2,7 +2,7 @@ package programmers;
 /*
  * N x N  크기의 정사각형 공간의 (1, 1)에 서있는 여행객이 L(왼쪽), R(오른쪽), U(위), D(아래) 로 이동함
  * 다만 정사각형 공간을 벗어나는 움직임은 무시된다
- * */
+ */
 public class LRUD {
 	public static void main(String[] args) {
 		String[] move = {"R", "R", "R", "U", "D", "D"};
